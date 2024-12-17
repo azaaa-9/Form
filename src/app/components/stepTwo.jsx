@@ -11,43 +11,45 @@ export function StepTwo({setSteps}) {
            <p className="text-gray-600 mb-6">
           Please provide all current information accurately.</p>
           <form className="space-y-4 text-black">
+
+
  <div>
  <label className="block text-gray-700 font-medium mb-1">Email <span className="text-red-500">*</span>
  </label>
  <input
               type="text"
               placeholder="Placeholder"
-              className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-400 outline-none"
-            />
+              className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-400 outline-none" />
  </div>
 
 
  <div>
  <label className="block text-gray-700 font-medium mb-1">Phone Number <span className="text-red-500">*</span>
  </label>
- <input
+ <input 
               type="text"
               placeholder="Placeholder"
-              className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-400 outline-none"
-            />
+              className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-400 outline-none" />
  </div>
+
+
  <div>
  <label className="block text-gray-700 font-medium mb-1">Password <span className="text-red-500">*</span>
  </label>
  <input
               type="password"
               placeholder="Placeholder"
-              className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-400 outline-none"
-            />
+              className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-400 outline-none"/>
  </div>
+
+
  <div>
  <label className="block text-gray-700 font-medium mb-1">Confirm Password <span className="text-red-500">*</span>
  </label>
  <input
               type="password"
               placeholder="Placeholder"
-              className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-400 outline-none"
-            />
+              className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-400 outline-none" />
  </div>
 
 
