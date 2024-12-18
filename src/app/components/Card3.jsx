@@ -29,12 +29,14 @@ export function Card3({ onclick, Back }) {
     <label htmlFor="dropzone-file" className="flex flex-col items-center justify-center w-full h-60 border-1 rounded-lg cursor-pointer dark:hover:grey dark:white hover:bg-gray-100">
             <p 
             className="mb-2 text-sm text-black"> 
-            <img className="w-[28px] h-[28px]" src="/profileImage.png" />
+            <img className="w-[26px] h-[28px]" src="/profileImage.png" />
             Add image
             </p>
         <input id="dropzone-file" type="file" className="hidden" />
     </label>
     </div>
+
+   
 
 
 
