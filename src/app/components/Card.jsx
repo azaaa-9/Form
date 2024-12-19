@@ -16,7 +16,7 @@ export function Card({ onclick, onChange, }) {
 
 
           <div className="text-black">
-            <p className="size-[14px] text-[#334155] w-[100px] h-7 mt-7 font-bold">
+            <p className="size-[14px] text-[#334155] w-[100px] h-7 mt-8 font-bold">
               First Name <span className="text-red-600">*</span>
             </p>
             <input
