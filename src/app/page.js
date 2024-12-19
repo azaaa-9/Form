@@ -18,11 +18,12 @@ export default function Home() {
   const [form, setForm] = useState({
     firstName: '',
     LastName: '',
-    UserName: '',
+    userName: '',
     Email: '',
     phoneNumber: '',
     password: '',
     repeatPassword: '',
+    date: '',
       })
 
       const onChange = (e) => {
@@ -31,14 +32,20 @@ export default function Home() {
         setForm(newValues);
         console.log(newValues)
       }
+
+      const [errors, setErrors] = useState({
+        firstName: 'firstName oruul!',
+        LastName: 'lastName oruul!',
+        userName: 'userName oruul!',
+      })
       
  
   return (
     <>
       <div className="bg-[#F4F4F4] w-full h-screen flex justify-center items-center">
-        {step == 1 && <Card onclick={nextStep} form={form} onChange={onChange} />}
-        {step == 2 && <Card2 onclick={nextStep} Back={backStep} />}
-        {step == 3 && <Card3 onclick={nextStep} Back={backStep} />}
+        {step == 1 && <Card onclick={nextStep} form={form} onChange={onChange} setErrors={setErrors} errors={errors} />}
+        {step == 2 && <Card2 onclick={nextStep} Back={backStep} form={form} onChange={onChange} />}
+        {step == 3 && <Card3 onclick={nextStep} Back={backStep} form={form} onChange={onChange} />}
         {step == 4 && <Card4 onclick={backStep} />}
       </div>
     </>

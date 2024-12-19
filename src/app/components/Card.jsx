@@ -1,5 +1,7 @@
+import { validateCard } from "../utils/validate";
 
-export function Card({ onclick, onChange, }) {
+
+export function Card({ onclick, onChange, errors, setErrors}) {
   return (
     <>
       <div className="w-[480px] h-[655px] bg-white rounded-[8px]">
@@ -24,8 +26,12 @@ export function Card({ onclick, onChange, }) {
               placeholder="firstName"
               id="firstName"
               onChange={onChange}
+              error={errors}
+              setErrors ={setErrors}
             ></input>
             <br></br>
+
+
             <p className="size-[14px] text-[#334155] w-[100px] h-7 mt-6 font-bold">
               Last Name <span className="text-red-600">*</span>
             </p>
@@ -34,21 +40,27 @@ export function Card({ onclick, onChange, }) {
               placeholder="Last Name "
               id="LastName"
               onChange={onChange}
+              error={errors}
+              setErrors ={setErrors}
             ></input>
             <br></br>
+
+
             <p className="size-[14px] text-[#334155] w-[100px] h-7 mt-6 font-bold ">
               UserName <span className="text-red-600">*</span>
             </p>
             <input
               className="w-[410px]  h-11  border-[#CBD5E1] border-[1px] rounded-md pl-2"
-              placeholder="UserName"
+              placeholder="userName"
               id="userName"
               onChange={onChange}
+              error={errors}
+              setErrors ={setErrors}
             ></input>
             
             <button
               className="w-[410px] h-11 bg-[#D6D8DB] flex justify-center items-center rounded-md mt-[120px] border-solid hover:border"
-              onClick={onclick}
+              onClick={(onclick)}
             >
               Next 1/3{" "}
             </button>

@@ -1,4 +1,4 @@
-export function Card3({ onclick, Back }) {
+export function Card3({ onclick, Back, onChange }) {
     return (
       <>
         <div className="w-[480px] h-[655px] bg-white rounded-[8px]">
@@ -19,27 +19,31 @@ export function Card3({ onclick, Back }) {
               </p>
               <input
                 type="date"
-                className="w-[410px] h-11 border-solid border-[#CBD5E1] border-[1px] rounded-md  pl-2"
+                id="date"
+                onChange={onChange}
+                className="w-[410px] h-11 border-solid border-[#CBD5E1] border-[1px] rounded-md  pl-2 text-black"
               ></input>
               
 
 
            <div>
-            <p className="size-[14px] w-[100px] h-7 mt-8 font-bold text-black">Profile</p>
-    <label htmlFor="dropzone-file" className="flex flex-col items-center justify-center w-full h-60 border-1 rounded-lg cursor-pointer dark:hover:grey dark:white hover:bg-gray-100">
+            <p className="size-[14px]  h-7 mt-8 font-bold text-black">Profile</p>
+    <label htmlFor="dropzone-file" className="flex flex-col items-center justify-center w-[416px] h-60 border-1 rounded-lg cursor-pointer hover:bg-gray-100">
             <p 
             className="mb-2 text-sm text-black"> 
             <img className="w-[26px] h-[28px]" src="/profileImage.png" />
             Add image
             </p>
-        <input id="dropzone-file" type="file" className="hidden" />
+        <input
+        id="dropzone-file" 
+        type="file" 
+        className="hidden"
+        onChange={onChange}
+        />
     </label>
     </div>
 
    
-
-
-
 
 
               <div className="flex justify-center  gap-3 mt-[41px]">
