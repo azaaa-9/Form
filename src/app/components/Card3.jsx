@@ -42,7 +42,7 @@ export function Card3({ onclick, Back }) {
 
 
 
-              <div className="flex justify-center  gap-3 mt-[40px]">
+              <div className="flex justify-center  gap-3 mt-[41px]">
                 <button
                   onClick={Back}
                   className="w-[128px] h-11 bg-[#CBD5E1 flex justify-center items-center border border-solid border-[#CBD5E1] rounded-lg "
