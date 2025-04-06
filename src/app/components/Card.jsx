@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { validateCard } from "../utils/validate";
 
@@ -82,9 +81,3 @@ export function Card({ onclick }) {
     </>
   );
 }
-
-
-
-
-
-
