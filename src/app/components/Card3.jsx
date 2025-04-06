@@ -19,7 +19,7 @@ export function Card3({ onclick, Back, onChange }) {
           <img src="/main.png" width={60} height={60} alt="Logo" />
           <h2 className="text-[26px] font-bold w-[150px] text-black">Join Us! 😎</h2>
           <p className="text-[#8E8E8E] text-[18px]">
-            Please provide all current information accurately.
+            Please provide all current information accurately
           </p>
         </div>
 
